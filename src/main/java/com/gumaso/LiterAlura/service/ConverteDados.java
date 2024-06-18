@@ -3,9 +3,10 @@ package com.gumaso.LiterAlura.service;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.type.CollectionType;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class ConverteDados implements IConverteDados{
     @Override
     public <T> T obterDados(String json, Class<T> aClass) throws JsonProcessingException {

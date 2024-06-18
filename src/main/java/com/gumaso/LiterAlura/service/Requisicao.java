@@ -1,4 +1,6 @@
 package com.gumaso.LiterAlura.service;
+import org.springframework.stereotype.Service;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.URLEncoder;
@@ -8,10 +10,8 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
-
+@Service
 public class Requisicao {
-
-
     public String recebendoJson(String endereco) throws IOException, InterruptedException {
         String nomeFormatado = URLEncoder.encode(endereco, StandardCharsets.UTF_8);
         HttpClient client = HttpClient.newBuilder()
