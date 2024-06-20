@@ -1,5 +1,4 @@
 # LiterAlura
-
 ## Descrição
 LiterAlura é uma aplicação Java para gerenciar informações sobre livros. Ela permite buscar livros por título, listar livros registrados, autores, autores vivos em um determinado ano e livros em um determinado idioma. A aplicação utiliza JSON para comunicar-se com um serviço externo e usa o Jackson para mapear os dados recebidos em objetos Java.
 
